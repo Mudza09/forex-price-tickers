@@ -1,0 +1,28 @@
+.currency-price {
+    position: relative;
+    top:100px;
+    left: 100px;
+}
+
+.uk-label {
+    margin-left: 15px;
+    background-color: grey;
+    border-radius: 6px;
+    color: #fff;
+    padding: 8px 10px;
+}
+
+.price-up {
+    background-color: green;
+    color: #fff;
+}
+
+.price-down {
+    background-color: red;
+    color: #fff;
+}
+
+.percent,
+.price {
+    margin: 0 5px;
+}
