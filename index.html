@@ -4,52 +4,41 @@
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8">
-    <meta name="description" content="Premium HTML Template by Indonez">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#4184dd" />
     <!-- Site Properties -->
-    <title>Stock jQuery</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Forex price tickers</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="stock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <ul class="currency-price">
-        <!-- change pair code, ex : GBPUSD, EURUSD, USDJPY, USDCAD, etc -->
-        <li class="pair-currency">
-            <span class="pair">GBPUSD</span>
-            <span class="uk-label">
-                <span class="price"></span>
-                <span class="percent"></span>
-            </span>
-        </li>
-        <li class="pair-currency">
-            <span class="pair">USDJPY</span> 
-            <span class="uk-label">
-                <span class="price"></span>
-                <span class="percent"></span>
-            </span>        
-        </li>
-        <li class="pair-currency">
-            <span class="pair">EURUSD</span> 
-            <span class="uk-label">
-                <span class="price"></span>
-                <span class="percent"></span>
-            </span>        
-        </li>
-        <li class="pair-currency">
-            <span class="pair">USDCAD</span> 
-            <span class="uk-label">
-                <span class="price"></span>
-                <span class="percent"></span>
-            </span>        
-        </li>
-    </ul>
+    <div class="container">
+        <h1>Data feed from Finnhub.io</h1>
+        
+        <ul class="price-ticker"></ul>
+    </div>    
 
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="stock.js"></script>
+    <script src="forex-price-tickers.js"></script>
+    <script>
+        // forex price user configurations
+        priceTicker({
+            apiKey: 'bpn288vrh5rf2as82tc0',     // finnhub api key
+            pairs: [                            // currency pairs
+                'XAUUSD', 
+                'GBPUSD', 
+                'EURUSD', 
+                'AUDUSD', 
+                'USDCAD', 
+                'USDJPY',
+                'USDCHF'
+            ],
+            autoReload: true,                   // set auto reload data every interval time used
+            interval: 30000                     // interval time in miliseconds (default is every 1 minutes)
+        });
+    </script>
 </body>
 
 </html>
