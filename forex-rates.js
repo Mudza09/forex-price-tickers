@@ -26,7 +26,7 @@ function priceTicker(options) {
     };
 
     // timestamp for forex url
-    let subtract = 2;
+    let subtract = 1;
     if (new Date().getDay() == 0 || new Date().getDay() == 1) subtract = 3
     let fromTime =  Math.trunc(new Date().setDate(new Date().getDate() - subtract)/1000);
     let toTime = Math.trunc(new Date()/1000);    
