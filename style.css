@@ -12,11 +12,19 @@ h1 {
     text-align: center;
 }
 
-ul.price-ticker {
-    margin-top: 6%;
+p {
+    text-align: center;
 }
 
-ul.price-ticker li {
+a {
+    color: inherit;
+}
+
+ul.forex-wrapper {
+    margin-top: 7%;
+}
+
+ul.forex-wrapper li {
     margin: 0 15px;
     display: inline;
 }

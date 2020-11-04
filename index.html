@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Site Properties -->
-    <title>Forex price tickers</title>
+    <title>Realtime forex rates javascript fetch</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -15,15 +15,16 @@
 
 <body>
     <div class="container">
-        <h1>Data feed from Finnhub.io</h1>
-        
-        <ul class="price-ticker"></ul>
+        <h1>Realtime forex rates</h1>
+        <p>using fetch API javascript, data provided by finnhub.io</p>
+        <p>Github : <a href="https://github.com/Mudza09/forex-rates">https://github.com/Mudza09/forex-rates</a></p>
+        <ul class="forex-wrapper"></ul>
     </div>    
 
     <!-- Javascript -->
-    <script src="forex-price-tickers.js"></script>
+    <script src="forex-rates.min.js"></script>
     <script>
-        // forex price user configurations
+        // forex rates user configurations
         priceTicker({
             apiKey: 'bpn288vrh5rf2as82tc0',     // finnhub api key
             pairs: [                            // currency pairs

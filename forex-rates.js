@@ -1,8 +1,8 @@
 function priceTicker(options) {
     this.defaults = {
-        apiKey: 'bpn288vrh5rf2as82tc0',     // finnhub api key
-        selector: '.price-ticker',          // selector used to find price ticker
-        childSelector: 'li',                // child selector use 'li' or 'div' depend your parent selector
+        apiKey: '',                         // finnhub api key
+        selector: '.forex-wrapper',         // selector that used display each forex prices
+        childSelector: 'li',                // child selector used, 'li' or 'div' depend your parent selector
         pairs: [                            // currency pairs
             'XAUUSD', 
             'GBPUSD', 
