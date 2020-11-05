@@ -37,10 +37,7 @@ function priceTicker(options) {
 
         this.options.pairs.forEach(function(e) {
             const tickerPrice = document.createElement(this.options.childSelector);
-            tickerPrice.innerHTML = `
-            <span class="pair">${e}</span>
-            <span class="uk-label">loading..</span>
-            `;
+            tickerPrice.innerHTML = `${e} <span class="uk-label">loading...</span>`;
     
             priceWrap.appendChild(tickerPrice);
         })
