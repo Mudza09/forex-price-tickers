@@ -2,7 +2,6 @@ Forex rates
 =========
 
 Javascript plugin for display current forex rates into the DOM, data provided from finnhub.io\
-
 See demo : [https://mudza09.github.io/forex-rates/](https://mudza09.github.io/forex-rates/)
 
 ### HTML markup
