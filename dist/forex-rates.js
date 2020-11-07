@@ -86,16 +86,6 @@ function forexRates(options) {
                     ? document.querySelectorAll('.uk-label')[i].classList.add(this.options.upClass)
                     : document.querySelectorAll('.uk-label')[i].classList.add(this.options.downClass)
 
-                // add uikit notification if percentage more than value
-                if(percentage.substring(1, 4) >= 1.3) {
-                    UIkit.notification({
-                        message: `<span uk-icon="icon: warning"></span> the percentage of pair ${pair[0]}${pair[1]} is more than <span class="uk-label uk-label-warning uk-border-pill">${percentage}</span>`,
-                        status: 'warning',
-                        pos: 'bottom-center',
-                        timeout: 28000
-                    });
-                }
-
                 // arrow up and down icons condition
                 let arrow;
                 data['c'][0] < data['c'][data['c'].length - 1]
