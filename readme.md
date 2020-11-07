@@ -2,6 +2,7 @@ Forex rates
 =========
 
 Javascript plugin for display current forex rates into the DOM, data provided from finnhub.io\
+
 See demo : [https://mudza09.github.io/forex-rates/](https://mudza09.github.io/forex-rates/)
 
 ### HTML markup
@@ -26,7 +27,7 @@ Define the styling for up and down conditions
 
 ### JavaScript
 
-...and that's it!
+Include this script tag into your HTML, get finnhub api key here : [https://finnhub.io/](https://finnhub.io/)
 
 ``` html
 <script src='forex-rates.js'></script>
@@ -40,7 +41,7 @@ Define the styling for up and down conditions
 
 ### Options
 
-All these options are optional.
+The options you can customize
 
 ``` js
 forexRates({
