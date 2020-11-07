@@ -1,7 +1,7 @@
 Forex rates
 =========
 
-Javascript plugin for display current forex rates into the DOM, data provided from finnhub.io
+Javascript plugin for display current forex rates into the DOM, data provided from finnhub.io\
 See demo : [https://mudza09.github.io/forex-rates/](https://mudza09.github.io/forex-rates/)
 
 ### HTML markup
@@ -64,7 +64,3 @@ forexRates({
     interval: 60000                      // interval time in miliseconds (default is every 1 minutes)
 });
 ```
-
-### License
-
-MIT
