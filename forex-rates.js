@@ -99,7 +99,7 @@ function forexRates(options) {
                 // add uikit notification if percentage more than value
                 if (percentage.substring(1, 4) >= 1.3) {
                     UIkit.notification({
-                        message: `<span uk-icon="icon: warning"></span> the percentage of pair ${pair[0]}${pair[1]} is more than <span class="uk-label uk-label-warning uk-border-pill">${percentage}</span>`,
+                        message: `<span uk-icon="icon: warning"></span> Attention, current percentage of ${pair[0]}${pair[1]} is <span class="uk-label uk-label-warning uk-border-pill">${percentage}</span>`,
                         status: 'warning',
                         pos: 'bottom-center',
                         timeout: 28000
