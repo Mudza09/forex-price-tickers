@@ -42,6 +42,7 @@ function forexRates(options) {
     // write currency pair list into DOM
     function writePairlist() {
         const priceWrap = document.querySelector(this.options.selector);
+        const offDay = new Date().getDay() == 0 || new Date().getDay() == 6;
 
         this.options.pairs.forEach(function(e) {
             const tickerPrice = document.createElement(this.options.childSelector);
@@ -51,7 +52,7 @@ function forexRates(options) {
         })
 
         getPrice(this.options.pairs);
-        if (this.options.autoReload && (!new Date().getDay() == 0 || !new Date().getDay() == 6)) setInterval(() => {
+        if (this.options.autoReload && !offDay) setInterval(() => {
             removeCss();
             getPrice(this.options.pairs);
         }, this.options.interval);
